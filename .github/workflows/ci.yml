@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install apt dependencies
-        run: apt install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
+        run: sudo apt install cairo-devel freetype-devel libffi-devel libjpeg-devel libpng-devel zlib-devel
       - uses: actions/checkout@v4
       - name: Configure Git Credentials
         run: |
