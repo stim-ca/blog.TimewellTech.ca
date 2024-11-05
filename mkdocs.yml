@@ -60,8 +60,8 @@ plugins:
   - privacy:
       enabled: true
       cache: true
-      assets: true
-      assets_fetch: true
+      assets: false
+      assets_fetch: false
       
 
   - blog:
