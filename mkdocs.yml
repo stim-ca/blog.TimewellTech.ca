@@ -1,8 +1,11 @@
 site_name: Timewell Spent
 site_url: https://blog.timewelltech.ca
 site_description: Sysadmin by day. Father, Husband, and aspiring DevOps Professional by Night
+repo_url: https://github.com/stim-ca/blog.timewelltech.ca
+edit_uri: edit/main/docs/
 remote_name: origin
 remote_branch: gh-pages
+
 
 theme:
   name: material
@@ -46,8 +49,14 @@ theme:
     - search.highlight
     - header.autohide
     - navigation.footer
+    - content.action.edit
+
 
 plugins:
+
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
 
   - search:
 
@@ -133,3 +142,5 @@ extra:
 
 extra_javascript:
   - javascripts/feedback.js
+
+copyright: Copyright &copy; 2021 - 2024 Shanw Timewell
